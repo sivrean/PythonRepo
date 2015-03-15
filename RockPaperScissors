@@ -1,5 +1,22 @@
-count = 3 #от 3 до 20 с увеличением на 2
-
-while count < 20:
-	print (count)
-	count += 2
+#телефон цифры от 1 до 9 каждая цифра какойто номер, при нажатии цифры получаем номер
+print ("My phone!")
+call = raw_input("Enter a number from 1 to 9 and hit 'Enter':").lower()
+number = "1--9"
+if call == "1": 
+	print ("0501111111")
+elif call == "2":
+    print ("0502222222")
+elif call == "3":
+	print ("0503333333")
+elif call == "4":
+	print ("0504444444")
+elif call == "5":
+	print ("0505555555")
+elif call == "6": 
+	print ("0506666666")
+elif call == "7":
+    print ("0507777777")
+elif call == "8":
+	print ("0508888888")
+elif call == "9":
+	print ("0509999999")
