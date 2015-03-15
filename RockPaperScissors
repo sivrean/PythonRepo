@@ -1,3 +1,26 @@
-print ("Hi Oleg");
-print ("Have an update for you");
-print ("Change from my side");
+print ("You have just entered the play!")
+print ("You want to choose a stone, scissors or paper?") # Player must enter one word: stone, scissors or paper
+#answer_player_1 = raw_input("Type stone, scissors or paper and hit 'Enter'.").lower()
+#answer_player_2 = raw_input("Type stone, scissors or paper and hit 'Enter'.").lower()
+answer_player_1 = "paper".lower()
+answer_player_2 = "stone".lower()
+
+if (answer_player_1 == "stone" and answer_player_1 == "scissors" and answer_player_1 == "paper") or (answer_player_2 == "stone" and answer_player_2== "scissors" and answer_player_2 == "paper"):
+	print ("Game over!")
+else:
+	if answer_player_1 == answer_player_2:
+		print ("Draw game!")
+	elif answer_player_1 == "stone" and answer_player_2 == "scissors":
+		print ("Player 1 win!")
+	elif answer_player_1 == "stone" and answer_player_2 == "paper":
+		print ("Player 2 win!")
+	elif answer_player_1 == "scissors" and answer_player_2 == "paper":
+		print ("Player 1 win!")
+	elif answer_player_1 == "scissors" and answer_player_2 == "stone":
+		print ("Player 2 win!")
+	elif answer_player_1 == "paper" and answer_player_2 == "stone":
+		print ("Player 1 win!")
+	elif answer_player_1 == "paper" and answer_player_2 == "scissors":
+		print ("Player 2 win!")
+	elif answer_player_1 == "" and answer_player_2 == "":
+		print ("Enter the value!")
